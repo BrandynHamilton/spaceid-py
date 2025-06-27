@@ -3,6 +3,10 @@ from spaceid_py import SpaceIDClient
 if __name__ == "__main__":
     sdk = SpaceIDClient()
 
+    print(F'Supported TLDs: {sdk.supported_tlds}')
+    print(F'Supported Chains: {sdk.supported_chains}')
+    print(F'TLD to Chain Map: {sdk.tld_chain_map}')
+
     print("1️⃣ Domain -> Address:")
     print(sdk.resolve_domain("spaceid.bnb"))
 
